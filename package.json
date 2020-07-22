@@ -1,7 +1,7 @@
 {
-  "name": "nanotip",
+  "name": "beyondcoin-nanotip",
   "version": "0.1.1",
-  "description": "Lightning Tip Box",
+  "description": "Beyondcoin Lightning Tip Box",
   "bin": {
     "nanotipd": "nanotipd",
     "nanotip": "nanotipd"
@@ -9,9 +9,9 @@
   "scripts": {
     "start": "./nanotipd"
   },
-  "repository": "https://github.com/ElementsProject/nanotip.git",
+  "repository": "https://github.com/beyondcoin-project/nanotip.git",
   "keywords": [
-    "bitcoin",
+    "beyondcoin",
     "lightning",
     "lightning-charge",
     "tip",

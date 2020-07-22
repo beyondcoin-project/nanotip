@@ -7,24 +7,25 @@
 
 A simple web server for accepting lightning donations.
 
-`nanotip` generates Lightning invoices on the fly using your Lightning Charge server,
+`nanotip` generates Lightning invoices on the fly using your Beyondcoin Lightning Charge server,
 allowing users to setup a tip jar that accepts Lightning Network payments.
 
-Powered by :zap: [Lightning Charge](https://github.com/ElementsProject/lightning-charge).
+Powered by :zap: [Lightning Charge](https://github.com/beyondcoin-project/beyondcoin-lightning-charge).
 
 ![nanotip demo](https://i.imgur.com/WLoiRT2.gif)
 
 ## Setup
 
-Setup [Lightning Charge](https://github.com/ElementsProject/lightning-charge), then:
+Setup [Lightning Charge](https://github.com/beyondcoin-project/beyondcoin-lightning-charge), then:
 
 ```bash
-$ npm install -g nanotip
-$ nanotipd --charge-token mySecretToken # defaults: --charge-url http://localhost:9112 --port 9115
+$ git clone https://github.com/beyondcoion-project/nanotip
+$ npm install
+$ npm start -- --charge-token mySecretToken # defaults: --charge-url http://localhost:9112 --port 9115
 nanotipd running on http://localhost:9115
 ```
 
-Note that `nanotip` uses Lightning Charge's built-in checkout page, meaning that the Lightning Charge
+Note that `nanotip` uses Beyondcoin Lightning Charge's built-in checkout page, meaning that the Beyondcoin Lightning Charge
 server has to be publicly accessible to users. If users need to access it using a different URL
 than the one used for communicating with the API, set `--charge-public-url`.
 
@@ -35,17 +36,17 @@ You can use `--theme` to pick a different [theme from bootswatch](https://bootsw
 ```bash
 $ nanotipd --help
 
-  Lightning Tip Box
+  Beyondcoin Lightning Tip Box
 
   Usage
     $ nanotipd [options]
 
   Options
-    -c, --charge-url <url>        lightning charge server url [default: http://localhost:9112]
-    -t, --charge-token <token>    lightning charge access token [required]
+    -c, --charge-url <url>        beyondcoin lightning charge server url [default: http://localhost:9112]
+    -t, --charge-token <token>    beyondcoin lightning charge access token [required]
     -P, --charge-public-url <url> url where charge is publicly accessible [default: {charge-url}]
     -m, --theme <name>            pick theme from bootswatch.com [default: yeti]
-    -l, --title <name>            website title [default: Lightning Tip Box]
+    -l, --title <name>            website title [default: Beyondcoin Lightning Tip Box]
     -p, --port <port>             http server port [default: 9115]
     -i, --host <host>             http server listen address [default: 127.0.0.1]
     -u, --url <url>               http server public url (used for webhooks) [default: http://{host}:{port}]

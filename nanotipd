@@ -5,11 +5,11 @@ const args = require('meow')(`
       $ nanotipd [options]
 
     Options
-      -c, --charge-url <url>        lightning charge server url [default: http://localhost:9112]
-      -t, --charge-token <token>    lightning charge access token [required]
+      -c, --charge-url <url>        beyondcoin lightning charge server url [default: http://localhost:9112]
+      -t, --charge-token <token>    beyondcoin lightning charge access token [required]
       -P, --charge-public-url <url> url where charge is publicly accessible [default: {charge-url}]
       -m, --theme <name>            pick theme from bootswatch.com [default: yeti]
-      -l, --title <name>            website title [default: Lightning Tip Box]
+      -l, --title <name>            website title [default: Beyondcoin Lightning Tip Box]
       -p, --port <port>             http server port [default: 9115]
       -i, --host <host>             http server listen address [default: 127.0.0.1]
       -u, --url <url>               http server public url (used for webhooks) [default: http://{host}:{port}]

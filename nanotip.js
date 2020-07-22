@@ -6,7 +6,7 @@ const app = require('express')()
 app.set('port', process.env.PORT || 9115)
 app.set('host', process.env.HOST || 'localhost')
 app.set('url', process.env.URL || `http://${app.settings.host}:${app.settings.port}`)
-app.set('title', process.env.TITLE || 'Lightning Tip Box')
+app.set('title', process.env.TITLE || 'Beyondcoin Lightning Tip Box')
 app.set('trust proxy', process.env.PROXIED || 'loopback')
 
 app.use(require('cookie-parser')())

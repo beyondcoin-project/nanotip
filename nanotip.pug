@@ -21,7 +21,7 @@ html.h-100
                                              style='width:10em', autofocus, autocomplete='off', required)
           .input-group-append
             select.form-control.form-control-lg(name='currency')
-              for currency in [ 'BTC', 'USD', 'EUR', 'GBP', 'CNY', 'JPY', 'ILS' ]
+              for currency in [ 'BYND', 'USD', 'EUR', 'GBP', 'CNY', 'JPY', 'ILS' ]
                 option= currency
 
         textarea.form-control.border-top-0(name='info[notes]', rows=3, placeholder='Anything to add? (optional)')
@@ -30,4 +30,4 @@ html.h-100
 
         button.btn.btn-lg.btn-primary.mt-4(type='submit') Send tip
 
-    .fixed-bottom.text-right.pb-2.pr-2.text-info powered by #[a(href='https://github.com/ElementsProject/nanotip') nanotip]
+    .fixed-bottom.text-right.pb-2.pr-2.text-info powered by #[a(href='https://github.com/beyondcoin-project/nanotip') nanotip]
